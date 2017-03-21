@@ -1,0 +1,12 @@
+d:\documents\visual studio 2015\Projects\Project\Project\bin\Debug\Project.exe.config
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.GUI.LoginGUI.resources
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.GUI.MainGUI.resources
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.Properties.Resources.resources
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+d:\documents\visual studio 2015\Projects\Project\Project\bin\Debug\Project.exe
+d:\documents\visual studio 2015\Projects\Project\Project\bin\Debug\Project.pdb
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.exe
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.pdb
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.GUI.AddProductGUI.resources
+d:\documents\visual studio 2015\Projects\Project\Project\obj\Debug\Project.GUI.ProductsGUI.resources
