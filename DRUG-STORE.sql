@@ -94,8 +94,10 @@ CREATE TABLE [BillDetails] (
 	BillDetailID int IDENTITY(1,1) NOT NULL,
 	BillID int NOT NULL,
 	ProductID int NOT NULL,
+	Unit nvarchar(30) NOT NULL,
 	Quantity int NOT NULL,
-	Capital real NOT NULL,
+	Price real NOT NULL,
+	SellPrice real NOT NULL,
 	RegisteredNumberDetail varchar(100),
   CONSTRAINT [PK_BILLDETAILS] PRIMARY KEY CLUSTERED
   (
@@ -241,3 +243,5 @@ insert into ProductTypes values(N'Dị Ứng')
 insert into ProductTypes values(N'Thần Kinh')
 
 select * from Products
+
+select * from ProductUnit

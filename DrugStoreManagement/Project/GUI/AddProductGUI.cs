@@ -45,6 +45,7 @@ namespace Project.GUI
             textbox.Location = new Point(163, 28 * count);
             textbox.Size = new Size(150, 20);
             textbox.Name = "txtConvertValue" + (count + 1);
+            textbox.KeyPress += this.txtPrice_KeyPress;
             panel1.Controls.Add(textbox);
 
             textbox = new TextBox();
@@ -52,6 +53,7 @@ namespace Project.GUI
             textbox.Location = new Point(315, 28 * count);
             textbox.Size = new Size(150, 20);
             textbox.Name = "txtSellPrice" + (count + 1);
+            textbox.KeyPress += this.txtPrice_KeyPress;
             panel1.Controls.Add(textbox);
         }
 
@@ -102,22 +104,57 @@ namespace Project.GUI
             }
 
             Product product = new Product(category,productName, description, guide, staff.StoreID, basicUnit, 0, price, sellPrice);
-            //bool check = ProductDAO.insertProduct(product);
-            //if (check)
-            //{
-            //    MessageBox.Show("Insert Successfully: " + productName, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Insert Fail: " + productName, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            bool check = ProductDAO.insertProduct(product);            
             String text = "";
-            for(int i = 0; i < panel1.Controls.OfType<TextBox>().ToList().Count; i++)
+            int productID = ProductDAO.GetMaxID();
+            string unitName = "";
+            int ConversionValue = 1;
+            double sellPriceUnit = 0;
+            for (int i = 0; i < panel1.Controls.OfType<TextBox>().ToList().Count; i++)
             {
                 TextBox textBox = panel1.Controls.OfType<TextBox>().ToList()[i];
-                text += " i: " + textBox.Text;
+                if (i % 3 == 0)
+                {
+                    unitName = textBox.Text;
+                    if (unitName.Trim().Equals(""))
+                    {
+                        MessageBox.Show("Unit name Required");
+                        textBox.Focus();
+                        return;
+                    }
+                }
+
+                if (i % 3 == 1)
+                {
+                    if (textBox.Text.Equals("") || textBox.Text.Equals("0"))
+                    {
+                        MessageBox.Show("ConversionValue Required and greater than 0");
+                        textBox.Focus();
+                        return;
+                    }
+                    ConversionValue = int.Parse(textBox.Text);
+                }
+
+                if(i%3 == 2)
+                {
+                    if (!textBox.Text.Trim().Equals(""))
+                    {
+                        sellPriceUnit = double.Parse(textBox.Text.Trim());
+                    }
+
+                    ProductUnit productUnit = new ProductUnit(productID,unitName,ConversionValue,sellPriceUnit);
+                    check = ProductUnitDAO.insertProductUnit(productUnit);
+                }
+                
             }
-            MessageBox.Show(text);
+            if (check)
+            {
+                MessageBox.Show("Insert Successfully: " + productName, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Insert Fail: " + productName, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
     }

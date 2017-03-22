@@ -32,7 +32,7 @@ namespace Project.DAL
         {
             try
             {
-                DataTable dt = DAO.GetDataTable("select MAX(orderID) as MAX from Orders");
+                DataTable dt = DAO.GetDataTable("select MAX(ProductID) as MAX from Products");
                 if (dt.Rows.Count == 0) return 0;
                 return int.Parse(dt.Rows[0][0].ToString());
             }
