@@ -22,3 +22,16 @@ D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.Properties
 D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\DrugStoreManagement.csproj.GenerateResource.Cache
 D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.exe
 D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.pdb
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\bin\Debug\Project.exe.config
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\bin\Debug\Project.exe
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\bin\Debug\Project.pdb
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.GUI.AddProductGUI.resources
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.GUI.DayEndGUI.resources
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.GUI.LoginGUI.resources
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.GUI.MainGUI.resources
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.GUI.ProductsGUI.resources
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.Properties.Resources.resources
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\DrugStoreManagement.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.exe
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.pdb
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\DrugStoreManagement.csprojResolveAssemblyReference.cache

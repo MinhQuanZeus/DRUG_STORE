@@ -1,10 +1,8 @@
-﻿DROP DATABASE DRUG_STORE
-USE master
+﻿USE master
 Create DATABASE DRUG_STORE
 GO
 USE DRUG_STORE
 GO
-
 
 
 
@@ -236,8 +234,45 @@ select * from Stores
 Insert into Stores values(N'Tâm Bình')
 Insert Into Staffs values(N'Minh Quân', 'minhquan','123456','Ha Noi','01649658689',0,1)
 Insert Into Staffs values(N'Minh Quân', '1','1','Ha Noi','01649658689',0,1)
+Insert Into Staffs values(N'1', '1','1','Ha Noi','0964133843',0,1)
 
 insert into ProductTypes values(N'Dị Ứng')
 insert into ProductTypes values(N'Thần Kinh')
 
+insert into Products values(1,'Panasetamon','ok','ok',1,'ok',100,50000,60000,0)
+insert into Products values(1,'Di Ia','ok','ok',1,'ok',100,40000,100000,0)
+insert into Products values(1,'Than Kinh','ok','ok',1,'ok',100,55000,80000,0)
+
+insert into Customers values('B','Ha Noi',0210,1)
+insert into Customers values('P','Nghe An',0210,1)
+
+insert into Bills values (convert(datetime,'21-3-17',5),5,2,1,0)
+insert into Bills values (convert(datetime,'21-3-17',5),3,1,2,0)
+insert into Bills values (convert(datetime,'21-3-17',5),9,2,1,0)
+insert into Bills values (convert(datetime,'22-3-17',5),5,2,2,0)
+insert into Bills values (convert(datetime,'23-3-17',5),5,2,1,0)
+
+insert into BillDetails values(8,2,9,1,'')
+insert into BillDetails values(10,3,6,1,'')
+insert into BillDetails values(9,1,7,1,'')
+
+select * from BillDetails
 select * from Products
+select * from Bills
+
+select b.BillID as N'Mã chứng từ',b.CreateDate as N'Thời gian',
+bd.Quantity as N'SL Sản phẩm',p.Name as N'Tên Sản Phẩm'
+,p.Price as N'Giá Nhập',p.SellPrice as N'Giá Bán',(p.SellPrice-p.Price)*bd.Quantity as N'Doanh Thu'
+ from Bills b join BillDetails bd
+on b.BillID=bd.BillID join Products p
+ on p.ProductID=bd.ProductID
+
+ select b.BillID as N'Mã chứng từ',b.CreateDate as N'Thời gian',
+bd.Quantity as N'SL Sản phẩm',p.Name as N'Tên Sản Phẩm'
+,p.Price as N'Giá Nhập',p.SellPrice as N'Giá Bán',(p.SellPrice-p.Price)*bd.Quantity as N'Doanh Thu'
+ from Bills b join BillDetails bd
+on b.BillID=bd.BillID join Products p
+ on p.ProductID=bd.ProductID where b.StaffID = 2
+
+select 'TA' = sum((p.SellPrice-p.Price)*bd.Quantity) from Bills b join BillDetails bd on b.BillID = bd.BillID join Products p on p.ProductID = bd.ProductID
+where b.StaffID=1
