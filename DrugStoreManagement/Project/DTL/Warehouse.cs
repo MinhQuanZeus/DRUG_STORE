@@ -26,6 +26,16 @@ namespace Project.DTL
             this.quantity = quantity;
             this.importDate = importDate;
         }
+        public Warehouse( int productID, string registeredNumber, DateTime expiryDate, int quantity, DateTime importDate)
+        {
+            
+            this.productID = productID;
+            this.registeredNumber = registeredNumber;
+            this.expiryDate = expiryDate;
+            this.quantity = quantity;
+            this.importDate = importDate;
+        }
+
 
         public int Id1
         {

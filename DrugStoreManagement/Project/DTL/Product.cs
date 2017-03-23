@@ -15,14 +15,14 @@ namespace Project.DTL
         private string guide;
         private int storeId;
         private string unit;
-        private int quantity;
+      
         private double price;
         private double sellPrice;
         private int status;
 
         public Product() { }
 
-        public Product(int id, int productypeID, string name, string description, string guide, int storeId, string unit, int quantity, double price, double sellPrice)
+        public Product(int id, int productypeID, string name, string description, string guide, int storeId, string unit,  double price, double sellPrice)
         {
             this.id = id;
             this.productypeID = productypeID;
@@ -31,12 +31,12 @@ namespace Project.DTL
             this.guide = guide;
             this.storeId = storeId;
             this.unit = unit;
-            this.quantity = quantity;
+          
             this.price = price;
             this.sellPrice = sellPrice;
         }
 
-        public Product(int productypeID, string name, string description, string guide, int storeId, string unit, int quantity, double price, double sellPrice)
+        public Product(int productypeID, string name, string description, string guide, int storeId, string unit,  double price, double sellPrice)
         {
             this.productypeID = productypeID;
             this.name = name;
@@ -44,12 +44,12 @@ namespace Project.DTL
             this.guide = guide;
             this.storeId = storeId;
             this.unit = unit;
-            this.quantity = quantity;
+           
             this.price = price;
             this.sellPrice = sellPrice;
         }
 
-        public Product(int id, int productypeID, string name, string description, string guide, int storeId, string unit, int quantity, double price, double sellPrice, int status)
+        public Product(int id, int productypeID, string name, string description, string guide, int storeId, string unit,  double price, double sellPrice, int status)
         {
             this.id = id;
             this.productypeID = productypeID;
@@ -58,7 +58,7 @@ namespace Project.DTL
             this.guide = guide;
             this.storeId = storeId;
             this.unit = unit;
-            this.quantity = quantity;
+           
             this.price = price;
             this.sellPrice = sellPrice;
             this.Status = status;
@@ -155,18 +155,7 @@ namespace Project.DTL
             }
         }
 
-        public int Quantity
-        {
-            get
-            {
-                return quantity;
-            }
-
-            set
-            {
-                quantity = value;
-            }
-        }
+      
 
         public double Price
         {

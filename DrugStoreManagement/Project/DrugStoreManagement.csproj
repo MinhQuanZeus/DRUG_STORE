@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="DTL\Bill.cs" />
     <Compile Include="DTL\BillDetail.cs" />
+    <Compile Include="DAL\ConnectionDB.cs" />
     <Compile Include="DTL\Customer.cs" />
     <Compile Include="DTL\Import.cs" />
     <Compile Include="DTL\ImportDetail.cs" />
@@ -98,6 +99,12 @@
     <Compile Include="GUI\ProductsGUI.Designer.cs">
       <DependentUpon>ProductsGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\WareHouseImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WareHouseImport.Designer.cs">
+      <DependentUpon>WareHouseImport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\AddProductGUI.resx">
@@ -111,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ProductsGUI.resx">
       <DependentUpon>ProductsGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WareHouseImport.resx">
+      <DependentUpon>WareHouseImport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
