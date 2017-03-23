@@ -19,6 +19,14 @@
             this.sellPrice = sellPrice;
         }
 
+        public ProductUnit(int productID, string unitName, int conversionValue, double sellPrice)
+        {
+            this.productID = productID;
+            this.unitName = unitName;
+            this.conversionValue = conversionValue;
+            this.sellPrice = sellPrice;
+        }
+
         public int UnitId
         {
             get

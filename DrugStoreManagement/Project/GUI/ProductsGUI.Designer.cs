@@ -39,15 +39,15 @@
             this.dataGridView1.Location = new System.Drawing.Point(133, 150);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(882, 410);
+            this.dataGridView1.Size = new System.Drawing.Size(932, 410);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnAddProduct
             // 
             this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProduct.Location = new System.Drawing.Point(748, 73);
+            this.btnAddProduct.Location = new System.Drawing.Point(733, 73);
             this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(142, 44);
+            this.btnAddProduct.Size = new System.Drawing.Size(175, 44);
             this.btnAddProduct.TabIndex = 1;
             this.btnAddProduct.Text = "+ Add Product";
             this.btnAddProduct.UseVisualStyleBackColor = true;

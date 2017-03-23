@@ -54,6 +54,7 @@
     <Compile Include="DAL\ImportDAO.cs" />
     <Compile Include="DAL\ImportDetailDAO.cs" />
     <Compile Include="DAL\ProductDAO.cs" />
+    <Compile Include="DAL\ProductUnitDAO.cs" />
     <Compile Include="DAL\ProductypeDAO.cs" />
     <Compile Include="DAL\StaffsDAO.cs" />
     <Compile Include="DAL\StoreDAO.cs" />
