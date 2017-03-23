@@ -42,6 +42,7 @@ CREATE TABLE [Products] (
 	Guide nvarchar(max),
 	StoreID int NOT NULL,
 	Unit varchar(30) NOT NULL,
+	Quantity int NOT NULL DEFAULT '0',
 	Price real NOT NULL,
 	SellPrice real NOT NULL,
 	Status int NOT NULL DEFAULT '0',
