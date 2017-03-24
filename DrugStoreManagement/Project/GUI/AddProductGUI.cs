@@ -92,6 +92,7 @@ namespace Project.GUI
                     sellPrice = double.Parse(txtSellPrice.Text);
                 }                
             string basicUnit = txtUnit.Text;
+
             if (productName.Equals(""))
             {
                 MessageBox.Show("Product Name Required","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
