@@ -52,5 +52,6 @@ namespace Project.DAL
             conn.Close();
             return price;
         }
+
     }
 }
