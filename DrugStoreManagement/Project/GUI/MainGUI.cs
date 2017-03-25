@@ -33,7 +33,17 @@ namespace Project.GUI
 
         private void dayEndToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DayEndGUI rs = new DayEndGUI();
+            DayEndGUI rs = new DayEndGUI(staff);
+            rs.FormBorderStyle = FormBorderStyle.None;
+            rs.TopLevel = false;
+            rs.Show();
+            this.toolStripContainer1.ContentPanel.Controls.Clear();
+            toolStripContainer1.ContentPanel.Controls.Add(rs);
+        }
+
+        private void salesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sales rs = new Sales(staff);
             rs.FormBorderStyle = FormBorderStyle.None;
             rs.TopLevel = false;
             rs.Show();

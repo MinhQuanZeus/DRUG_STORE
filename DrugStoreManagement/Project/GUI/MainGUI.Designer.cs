@@ -172,6 +172,7 @@
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
             this.salesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.salesToolStripMenuItem.Text = "Sales";
+            this.salesToolStripMenuItem.Click += new System.EventHandler(this.salesToolStripMenuItem_Click);
             // 
             // productToolStripMenuItem1
             // 
@@ -216,10 +217,10 @@
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1011, 508);
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 26);
-            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(1011, 557);
             this.toolStripContainer1.TabIndex = 2;
@@ -248,7 +249,7 @@
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainGUI";
             this.Text = "MainGUI";
             this.menuStrip1.ResumeLayout(false);

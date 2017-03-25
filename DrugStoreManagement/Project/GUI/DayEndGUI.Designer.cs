@@ -42,15 +42,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txt2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txt3 = new System.Windows.Forms.TextBox();
             this.btnHangHoa = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -113,7 +113,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(292, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(353, 30);
@@ -177,14 +177,14 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.btnSearch);
-            this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Location = new System.Drawing.Point(5, 310);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(122, 101);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Enter StaffID";
+            this.groupBox3.Text = "Choose Staff";
             // 
             // btnSearch
             // 
@@ -195,13 +195,6 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(11, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
             // 
             // label7
             // 
@@ -221,11 +214,11 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.comboBox3);
+            this.groupBox4.Controls.Add(this.comboBox2);
             this.groupBox4.Controls.Add(this.btnHangHoa);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.txt3);
             this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.txt2);
             this.groupBox4.Location = new System.Drawing.Point(881, 118);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(122, 156);
@@ -233,21 +226,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Enter Infomation";
             // 
-            // txt2
+            // btnHangHoa
             // 
-            this.txt2.Location = new System.Drawing.Point(7, 35);
-            this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(100, 20);
-            this.txt2.TabIndex = 0;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Enter StoreID:";
+            this.btnHangHoa.Location = new System.Drawing.Point(16, 115);
+            this.btnHangHoa.Name = "btnHangHoa";
+            this.btnHangHoa.Size = new System.Drawing.Size(75, 23);
+            this.btnHangHoa.TabIndex = 3;
+            this.btnHangHoa.Text = "Search";
+            this.btnHangHoa.UseVisualStyleBackColor = true;
+            this.btnHangHoa.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 
@@ -258,28 +245,44 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "Enter ProductID";
             // 
-            // txt3
+            // label9
             // 
-            this.txt3.Location = new System.Drawing.Point(7, 93);
-            this.txt3.Name = "txt3";
-            this.txt3.Size = new System.Drawing.Size(100, 20);
-            this.txt3.TabIndex = 3;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 16);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Choose Store:";
             // 
-            // btnHangHoa
+            // comboBox1
             // 
-            this.btnHangHoa.Location = new System.Drawing.Point(16, 127);
-            this.btnHangHoa.Name = "btnHangHoa";
-            this.btnHangHoa.Size = new System.Drawing.Size(75, 23);
-            this.btnHangHoa.TabIndex = 3;
-            this.btnHangHoa.Text = "Search";
-            this.btnHangHoa.UseVisualStyleBackColor = true;
-            this.btnHangHoa.Click += new System.EventHandler(this.button1_Click);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(7, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(107, 21);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(6, 37);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(101, 21);
+            this.comboBox2.TabIndex = 4;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(6, 88);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(100, 21);
+            this.comboBox3.TabIndex = 5;
             // 
             // DayEndGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 493);
+            this.ClientSize = new System.Drawing.Size(1046, 526);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -301,7 +304,6 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -323,16 +325,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton rdHangHoa;
         private System.Windows.Forms.RadioButton rdBanHang;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnHangHoa;
-        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

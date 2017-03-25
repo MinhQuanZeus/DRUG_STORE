@@ -233,15 +233,41 @@ GO
 ALTER TABLE [ProductUnit] CHECK CONSTRAINT [ProductUnit_fk0]
 GO
 
-select * from Stores
+select * from Staffs
 Insert into Stores values(N'Tâm Bình')
+Insert into Stores values(N'Nguyễn Dũng')
+
 Insert Into Staffs values(N'Minh Quân', 'minhquan','123456','Ha Noi','01649658689',0,1)
 Insert Into Staffs values(N'Minh Quân', '1','1','Ha Noi','01649658689',0,1)
-Insert Into Staffs values(N'1', '1','1','Ha Noi','01649658689',0,1)
-
+Insert Into Staffs values(N'Nguyễn Dũng', 'dung','1','Ha Noi','01649658689',1,2)
 insert into ProductTypes values(N'Dị Ứng')
 insert into ProductTypes values(N'Thần Kinh')
 
-select * from Products
+insert into Products values(1,'Panasetamon','ok','ok','1','1',50000,60000,0)
+insert into Products values(1,'Di Ia','ok','ok','1','1',40000,100000,0)
+insert into Products values(1,'Than Kinh','ok','ok','1','1',55000,80000,0)
 
+insert into Customers values('B','Ha Noi',0210,1)
+insert into Customers values('P','Nghe An',0210,1)
+
+insert into Bills values (convert(datetime,'21-3-17',5),5,2,1,0)
+insert into Bills values (convert(datetime,'21-3-17',5),3,1,1,0)
+insert into Bills values (convert(datetime,'21-3-17',5),9,2,2,0)
+insert into Bills values (convert(datetime,'22-3-17',5),5,2,2,0)
+insert into Bills values (convert(datetime,'23-3-17',5),5,2,2,0)
+
+
+insert into BillDetails values(1,2,'Vien',9,40000,100000,'')
+insert into BillDetails values(2,3,'Hop',6,55000,80000,'')
+insert into BillDetails values(3,1,'Thung',7,50000,60000,'')
+insert into BillDetails values(4,1,'Thung',7,50000,60000,'')
+
+insert into ProductUnit values(1,'Vien',5,60000)
+insert into ProductUnit values(2,'Hop',6,100000)
+insert into ProductUnit values(3,'Thung',7,80000)
+
+select * from Staffs
+select * from BillDetails
 select * from ProductUnit
+
+select * from Staffs where storeID = 1

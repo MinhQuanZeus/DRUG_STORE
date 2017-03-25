@@ -35,3 +35,4 @@ D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.pdb
 \\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.exe
 \\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.pdb
 \\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\DrugStoreManagement.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\FPT\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.GUI.Sales.resources
