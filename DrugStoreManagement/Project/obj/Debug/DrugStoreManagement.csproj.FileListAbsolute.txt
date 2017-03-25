@@ -23,3 +23,15 @@ D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\DrugStoreManagemen
 D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.exe
 D:\Documents\DRUG_STORE\DrugStoreManagement\Project\obj\Debug\Project.pdb
 E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\bin\Debug\Project.exe.config
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\bin\Debug\Project.exe
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\bin\Debug\Project.pdb
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\DrugStoreManagement.csprojResolveAssemblyReference.cache
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.GUI.AddProductGUI.resources
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.GUI.LoginGUI.resources
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.GUI.MainGUI.resources
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.GUI.ProductReport.resources
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.GUI.ProductsGUI.resources
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.Properties.Resources.resources
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\DrugStoreManagement.csproj.GenerateResource.Cache
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.exe
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.pdb

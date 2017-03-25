@@ -13,6 +13,7 @@ namespace Project.DAL
     public class DAO
     {
         static string strConn = ConfigurationManager.ConnectionStrings["DRUG_STOREConnectionString"].ConnectionString;
+
         static public DataTable GetDataTable(string sqlSelect)
         {
             try
@@ -33,7 +34,7 @@ namespace Project.DAL
 
 
         }
-
+   
         static public bool UpdateTable(SqlCommand cmd)
         {
             try

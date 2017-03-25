@@ -69,8 +69,10 @@
     <Compile Include="DTL\Import.cs" />
     <Compile Include="DTL\ImportDetail.cs" />
     <Compile Include="DTL\Product.cs" />
+    <Compile Include="DTL\ProductReport.cs" />
     <Compile Include="DTL\ProductType.cs" />
     <Compile Include="DTL\ProductUnit.cs" />
+    <Compile Include="DTL\ReportCustomer.cs" />
     <Compile Include="DTL\Staff.cs" />
     <Compile Include="DTL\Store.cs" />
     <Compile Include="DTL\Warehouse.cs" />
@@ -79,6 +81,12 @@
     </Compile>
     <Compile Include="GUI\AddProductGUI.Designer.cs">
       <DependentUpon>AddProductGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CustomerReport.Designer.cs">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\LoginGUI.cs">
       <SubType>Form</SubType>
@@ -91,6 +99,12 @@
     </Compile>
     <Compile Include="GUI\MainGUI.Designer.cs">
       <DependentUpon>MainGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ProductReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ProductReport.Designer.cs">
+      <DependentUpon>ProductReport.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ProductsGUI.cs">
       <SubType>Form</SubType>
@@ -108,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MainGUI.resx">
       <DependentUpon>MainGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ProductReport.resx">
+      <DependentUpon>ProductReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ProductsGUI.resx">
       <DependentUpon>ProductsGUI.cs</DependentUpon>
