@@ -69,7 +69,6 @@
     <Compile Include="DTL\Import.cs" />
     <Compile Include="DTL\ImportDetail.cs" />
     <Compile Include="DTL\Product.cs" />
-    <Compile Include="DTL\ProductReport.cs" />
     <Compile Include="DTL\ProductType.cs" />
     <Compile Include="DTL\ProductUnit.cs" />
     <Compile Include="DTL\ReportCustomer.cs" />
@@ -116,6 +115,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\AddProductGUI.resx">
       <DependentUpon>AddProductGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CustomerReport.resx">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LoginGUI.resx">
       <DependentUpon>LoginGUI.cs</DependentUpon>

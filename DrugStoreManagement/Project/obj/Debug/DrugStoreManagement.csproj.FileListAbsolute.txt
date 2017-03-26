@@ -35,3 +35,4 @@ E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debu
 E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\DrugStoreManagement.csproj.GenerateResource.Cache
 E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.exe
 E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.pdb
+E:\kì 5\c#\ProjectFinal\GitHubFinalProject\DrugStoreManagement\Project\obj\Debug\Project.GUI.CustomerReport.resources
