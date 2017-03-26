@@ -16,13 +16,13 @@ namespace Project.GUI
         public CustomerReport()
         {
             InitializeComponent();
-            DataTable dt = DAO.GetDataTable("select Customers.CustomerID,Customers.Name,Customers.Address,sum(Bills.BillID) as TotalBill,sum(BillDetails.SellPrice) as Buy,sum(BillDetails.SellPrice)-sum(BillDetails.Price) as Benefit , Bills.isDebt from Customers,Bills,BillDetails  where Customers.CustomerID = Bills.CustomerID and Bills.BillID = BillDetails.BillID group by Customers.CustomerID, Customers.Name, Customers.Address, Bills.isDebt");
+            DataTable dt = DAO.GetDataTable("select Customers.CustomerID,Customers.Name,Customers.Address,sum(BillDetails.SellPrice) as Buy,sum(BillDetails.SellPrice)-sum(BillDetails.Price) as Benefit , Bills.isDebt from Customers,Bills,BillDetails  where Customers.CustomerID = Bills.CustomerID and Bills.BillID = BillDetails.BillID group by Customers.CustomerID, Customers.Name, Customers.Address, Bills.isDebt");
             dataGridView1.DataSource = dt;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            DataTable dt1 = DAO.GetDataTable("select Customers.CustomerID,Customers.Name,Customers.Address,sum(Bills.BillID) as TotalBill,sum(BillDetails.SellPrice) as Buy,sum(BillDetails.SellPrice)-sum(BillDetails.Price) as Benefit , Bills.isDebt from Customers,Bills,BillDetails  where Customers.CustomerID = Bills.CustomerID and Bills.BillID = BillDetails.BillID group by Customers.CustomerID, Customers.Name, Customers.Address, Bills.isDebt");
+            DataTable dt1 = DAO.GetDataTable("select Customers.CustomerID,Customers.Name,Customers.Address,sum(BillDetails.SellPrice) as Buy,sum(BillDetails.SellPrice)-sum(BillDetails.Price) as Benefit , Bills.isDebt from Customers,Bills,BillDetails  where Customers.CustomerID = Bills.CustomerID and Bills.BillID = BillDetails.BillID group by Customers.CustomerID, Customers.Name, Customers.Address, Bills.isDebt");
             dataGridView1.DataSource = dt1;
         }
 
