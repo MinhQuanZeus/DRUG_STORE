@@ -81,6 +81,12 @@
     <Compile Include="GUI\AddProductGUI.Designer.cs">
       <DependentUpon>AddProductGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DayEndGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DayEndGUI.Designer.cs">
+      <DependentUpon>DayEndGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\LoginGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,10 +105,19 @@
     <Compile Include="GUI\ProductsGUI.Designer.cs">
       <DependentUpon>ProductsGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\AddProductGUI.resx">
       <DependentUpon>AddProductGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DayEndGUI.resx">
+      <DependentUpon>DayEndGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LoginGUI.resx">
       <DependentUpon>LoginGUI.cs</DependentUpon>
@@ -112,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ProductsGUI.resx">
       <DependentUpon>ProductsGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
