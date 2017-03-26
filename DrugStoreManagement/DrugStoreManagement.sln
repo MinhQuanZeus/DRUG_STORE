@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugStoreManagement", "Project\DrugStoreManagement.csproj", "{C560CB5F-4881-44FA-8629-B5CD032ED5BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugStoreManagement", "DrugStoreManagement\DrugStoreManagement.csproj", "{E9C9CA70-567F-48F5-B584-CBB84578BF9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C560CB5F-4881-44FA-8629-B5CD032ED5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C560CB5F-4881-44FA-8629-B5CD032ED5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C560CB5F-4881-44FA-8629-B5CD032ED5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C560CB5F-4881-44FA-8629-B5CD032ED5BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C9CA70-567F-48F5-B584-CBB84578BF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C9CA70-567F-48F5-B584-CBB84578BF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C9CA70-567F-48F5-B584-CBB84578BF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C9CA70-567F-48F5-B584-CBB84578BF9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

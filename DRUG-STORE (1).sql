@@ -96,11 +96,7 @@ CREATE TABLE [BillDetails] (
 	Unit nvarchar(30) NOT NULL,
 	Quantity int NOT NULL,
 	Price real NOT NULL,
-<<<<<<< HEAD:DRUG-STORE (1).sql
-	SellPrice real NOT NULL,
-=======
 	SellPrice real NOT NULL
->>>>>>> origin/BranchOfChido:DRUG-STORE.sql
 	RegisteredNumberDetail varchar(100),
   CONSTRAINT [PK_BILLDETAILS] PRIMARY KEY CLUSTERED
   (
@@ -153,7 +149,7 @@ CREATE TABLE [ProductUnit] (
 	ProductID int NOT NULL,
 	UnitName nvarchar(30) NOT NULL,
 	ConversionValue int NOT NULL,
-	SellPrice real NOT NULL DEFAULT '0',
+	SellPrice real NOT NULL,
   CONSTRAINT [PK_PRODUCTUNIT] PRIMARY KEY CLUSTERED
   (
   [UnitID] ASC
@@ -246,13 +242,9 @@ Insert Into Staffs values(N'Minh Quân', '1','1','Ha Noi','01649658689',0,1)
 Insert Into Staffs values(N'Nguyễn Dũng', 'dung','1','Ha Noi','01649658689',1,2)
 insert into ProductTypes values(N'Dị Ứng')
 insert into ProductTypes values(N'Thần Kinh')
-
-<<<<<<< HEAD:DRUG-STORE (1).sql
-<<<<<<< HEAD:DRUG-STORE.sql
 select * from Products
 
 select * from ProductUnit
-=======
 insert into Products values(1,'Panasetamon','ok','ok','1','1',50000,60000,0)
 insert into Products values(1,'Di Ia','ok','ok','1','1',40000,100000,0)
 insert into Products values(1,'Than Kinh','ok','ok','1','1',55000,80000,0)
@@ -281,8 +273,6 @@ select * from BillDetails
 select * from ProductUnit
 
 select * from Staffs where storeID = 1
->>>>>>> origin/dungnv:DRUG-STORE (1).sql
-=======
 select * from Products
 
 select * from Staffs
@@ -308,4 +298,3 @@ insert into BillDetails values(7,3,50,2)
 insert into BillDetails values(8,1,20,2)
 insert into BillDetails values(8,2,20,1)
 insert into BillDetails values(8,3,20,6)
->>>>>>> origin/BranchOfChido:DRUG-STORE.sql
