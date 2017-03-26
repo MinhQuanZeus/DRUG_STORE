@@ -50,5 +50,25 @@ namespace Project.GUI
             this.toolStripContainer1.ContentPanel.Controls.Clear();
             toolStripContainer1.ContentPanel.Controls.Add(rs);
         }
+
+        private void productToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProductReport pr = new ProductReport();
+            pr.FormBorderStyle = FormBorderStyle.None;
+            pr.TopLevel = false;
+            pr.Show();
+            this.toolStripContainer1.ContentPanel.Controls.Clear();
+            toolStripContainer1.ContentPanel.Controls.Add(pr);
+        }
+
+        private void customerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CustomerReport cr = new CustomerReport();
+            cr.FormBorderStyle = FormBorderStyle.None;
+            cr.TopLevel = false;
+            cr.Show();
+            this.toolStripContainer1.ContentPanel.Controls.Clear();
+            toolStripContainer1.ContentPanel.Controls.Add(cr);
+        }
     }
 }

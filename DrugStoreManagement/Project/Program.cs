@@ -17,7 +17,7 @@ namespace Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerReport());
+            Application.Run(new LoginGUI());
         }
     }
 }
