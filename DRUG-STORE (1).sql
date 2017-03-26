@@ -96,7 +96,11 @@ CREATE TABLE [BillDetails] (
 	Unit nvarchar(30) NOT NULL,
 	Quantity int NOT NULL,
 	Price real NOT NULL,
+<<<<<<< HEAD:DRUG-STORE (1).sql
 	SellPrice real NOT NULL,
+=======
+	SellPrice real NOT NULL
+>>>>>>> origin/BranchOfChido:DRUG-STORE.sql
 	RegisteredNumberDetail varchar(100),
   CONSTRAINT [PK_BILLDETAILS] PRIMARY KEY CLUSTERED
   (
@@ -243,6 +247,7 @@ Insert Into Staffs values(N'Nguyễn Dũng', 'dung','1','Ha Noi','01649658689',1
 insert into ProductTypes values(N'Dị Ứng')
 insert into ProductTypes values(N'Thần Kinh')
 
+<<<<<<< HEAD:DRUG-STORE (1).sql
 <<<<<<< HEAD:DRUG-STORE.sql
 select * from Products
 
@@ -277,3 +282,30 @@ select * from ProductUnit
 
 select * from Staffs where storeID = 1
 >>>>>>> origin/dungnv:DRUG-STORE (1).sql
+=======
+select * from Products
+
+select * from Staffs
+
+select * from Customers
+insert into Customers values('')
+
+BillID int IDENTITY(1,1) NOT NULL,
+	CreateDate date NOT NULL,
+	Total real NOT NULL,
+	StaffID int NOT NULL,
+	CustomerID int NOT NULL,
+	isDebt bit NOT NULL DEFAULT '0',
+	select DATEDIFF
+insert into Bills values('2017-3-3',500000,1,1,0)
+insert into Bills values('2017-9-3',500000,2,2,0)
+select * from Bills
+select * from BillDetails
+select * from Products
+insert into BillDetails values(7,1,20,2)
+insert into BillDetails values(7,2,40,2)
+insert into BillDetails values(7,3,50,2)
+insert into BillDetails values(8,1,20,2)
+insert into BillDetails values(8,2,20,1)
+insert into BillDetails values(8,3,20,6)
+>>>>>>> origin/BranchOfChido:DRUG-STORE.sql
